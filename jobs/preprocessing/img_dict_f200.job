@@ -1,0 +1,11 @@
+#!/bin/sh
+# The following lines instruct Slurm to allocate one GPU.
+#SBATCH -p gpu
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-gpu=32
+#SBATCH --mem=100gb
+#SBATCH --time=48:00:00
+#SBATCH -o /home/mbiriuk/CLIP/logs/img_dict_f200.out
+
+# Start the experiment.
+python /home/mbiriuk/CLIP/src/get_dict.py --dataset fashion200k --content_type image

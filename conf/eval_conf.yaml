@@ -1,0 +1,57 @@
+DATASET:
+  CUB:
+    root: /ivi/ilps/personal/mbiriuk/CUB_200_2011/
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+  ABO:
+    root: /ivi/ilps/personal/mbiriuk/abo
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+  fashion200k:
+    root: /ivi/ilps/personal/mbiriuk/fashion200k
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+  coco:
+    root: /ivi/ilps/personal/mbiriuk/ms-coco
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+  f30k:
+    root: /ivi/ilps/personal/mbiriuk/flickr30k_images
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+
+# for reproducibility
+manual_seed: 0
+
+# training information
+deliverables_folder: deliverables
+batch_size: 128
+epochs: 30
+device: to be defined in the script
+num_workers: 4
+
+head_lr: 1.0e-3
+weight_decay: 1.0e-3
+patience: 1
+factor: 0.8
+
+# for projection head; used for both image and text encoders
+# text
+text_input_dim: 768
+text_hidden_dim: 2048
+# image
+image_input_dim: 768
+image_hidden_dim: 2048
+projection_output_dim: 2048
+dropout: 0.1
+temperature: 1

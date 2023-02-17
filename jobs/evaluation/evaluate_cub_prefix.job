@@ -1,0 +1,17 @@
+#!/bin/sh
+#SBATCH -p gpu
+#SBATCH --gres=gpu:1
+#SBATCH --mem=80gb
+#SBATCH --time=48:00:00
+#SBATCH -o /home/mbiriuk/CLIP/logs/eval-cub.out
+# dataset options: choose from 'CUB', 'ABO', 'fashion200k', 'coco', 'f30k'
+
+echo 'Working with CUB-200!'
+
+echo 'Start the evalation!'
+python CLIP/src/evaluation_script.py --dataset CUB \
+--is_zero_shot True \
+--add_prefix True
+echo 'Done with the evalation!'
+
+echo 'End of script!'

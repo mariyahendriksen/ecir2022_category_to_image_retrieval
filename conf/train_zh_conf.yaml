@@ -1,0 +1,80 @@
+DATASET:
+  CUB:
+    dataset_root: /ivi/ilps/personal/mbiriuk/CUB_200_2011/
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+    df_dev: df_dev.csv
+    model_path: deliverables/models/best_model_CUB_30E_128BS.pt
+  ABO:
+    dataset_root: /ivi/ilps/personal/mbiriuk/abo
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+    df_dev: df_dev.csv
+    model_path: deliverables/models/best_model_ABO_30E_128BS.pt
+  fashion200k:
+    dataset_root: /ivi/ilps/personal/mbiriuk/fashion200k
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+    df_dev: df_dev.csv
+    model_path: deliverables/models/best_model_fashion200k_30E_128BS.pt
+  coco:
+    dataset_root: /ivi/ilps/personal/mbiriuk/ms-coco
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+    df_dev: df_dev.csv
+    model_path: deliverables/models/best_model_coco_30E_128BS.pt
+  f30k:
+    dataset_root: /ivi/ilps/personal/mbiriuk/flickr30k_images
+    text_dict: text_dict.pkl
+    image_dict: image_dict.pkl
+    df_train: df_train.csv
+    df_test: df_test.csv
+    df_dev: df_dev.csv
+    model_path: deliverables/models/best_model_f30k_30E_128BS.pt
+
+
+clip_version: clip-ViT-L-14
+
+# for reproducibility
+manual_seed: 0
+
+# training information
+deliverables_folder: deliverables
+batch_size: 128
+epochs: 30
+device: to be defined in the script
+num_workers: 4
+
+# for encoders
+# text
+# text_encoder_input_dim: 768
+# text_encoder_hidden_dim: 2048
+# text_encoder_output_dim: 2048
+# # image
+# image_encoder_input_dim: 768
+# image_encoder_hidden_dim: 2048
+# image_encoder_output_dim: 2048
+
+head_lr: 1.0e-3
+weight_decay: 1.0e-3
+patience: 1
+factor: 0.8
+
+# for projection head; used for both image and text encoders
+# text
+text_input_dim: 768
+text_hidden_dim: 2048
+# image
+image_input_dim: 768
+image_hidden_dim: 2048
+projection_output_dim: 2048
+dropout: 0.1
+temperature: 1

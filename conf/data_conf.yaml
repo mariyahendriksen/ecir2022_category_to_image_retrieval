@@ -1,0 +1,103 @@
+# Dataset-specific settings
+CUB:
+    dataset: CUB_200
+    dataset_root: ./CLIP/data/datasets/cub
+    csv_file: cub_1_cap_per_img.csv
+    csv_file_small: cub_tiny.csv
+    image_folder: images
+    columns_dtypes: {
+        'image_file': str,
+        'class': str,
+        'eval_status': str,
+        'caption': str
+    }
+    content_type: {
+        'image': 'image_file',
+        'text': 'caption'
+    }
+    # clip-related settings
+    # version of clip we used to get image and caption representations
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14
+ABO:
+    dataset: ABO
+    dataset_root: ./CLIP/data/datasets/abo
+    csv_file: abo_captions_1cap.csv
+    image_folder: images/small
+    columns_dtypes: {
+        'image_id': str,
+        'height': int,
+        'width': int,
+        'path': str,
+        'caption': str,
+        'eval_status': str
+    }
+    # mapping between content and column
+    content_type: {
+        'image': 'path',
+        'text': 'caption'
+    }
+    # clip-related settings
+    # version of clip we used to get image and caption representations
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14
+fashion200k:
+    dataset: fashion200k
+    dataset_root: /ivi/ilps/personal/mbiriuk/fashion200k
+    csv_file: fashion200k.csv
+    image_folder: ''
+    columns_dtypes: {
+        'image_name_full': str,
+        'image_url': str,
+        'image_name': str,
+        'caption': str,
+        'eval_status': str
+    }
+    # mapping between content and column
+    content_type: {
+        'image': 'image_name_full',
+        'text': 'caption'
+    }
+    # clip-related settings
+    # version of clip we used to get image and caption representations
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14
+coco:
+    dataset: coco
+    dataset_root: /ivi/ilps/personal/mbiriuk/ms-coco
+    csv_file: mscoco_captions.csv
+    image_folder: 'images'
+    columns_dtypes: {
+        'file_name': str,
+        'url': str,
+        'caption': str,
+        'eval_status': str
+    }
+    # mapping between content and column
+    content_type: {
+        'image': 'file_name',
+        'text': 'caption'
+    }
+    # clip-related settings
+    # version of clip we used to get image and caption representations
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14
+f30k:
+    dataset: f30k
+    dataset_root: /ivi/ilps/personal/mbiriuk/flickr30k_images
+    csv_file: dataset_flickr30k.csv
+    image_folder: 'flickr30k_images'
+    columns_dtypes: {
+        'image_name': str,
+        'image_caption': str,
+        'eval_status': str
+    }
+    # mapping between content and column
+    content_type: {
+        'image': 'image_name',
+        'text': 'image_caption'
+    }
+    # clip-related settings
+    # version of clip we used to get image and caption representations
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14

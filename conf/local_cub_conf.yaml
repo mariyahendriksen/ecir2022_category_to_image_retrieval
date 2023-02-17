@@ -1,0 +1,21 @@
+# Dataset-specific settings
+CUB:
+    dataset_root: /Users/mhendriksen/Desktop/repositories/datasets/CUB_200_2011/
+    csv_file: cub_1_cap_per_img.csv
+    image_folder: CUB_200_2011/images
+    columns_dtypes: {
+        'image_file': str,
+        'class': str,
+        'eval_status': str,
+        'caption': str
+    }
+    content_type: {
+        'image': 'image_file',
+        'text': 'caption'
+    }
+
+    # clip-related settings
+    # options: clip-ViT-B-32, clip-ViT-B-16, clip-ViT-L-14
+    clip_version: clip-ViT-L-14
+    # dict path
+    dict_file: test_dict.pkl

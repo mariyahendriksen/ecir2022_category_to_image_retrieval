@@ -1,0 +1,30 @@
+#!/bin/sh
+#SBATCH -c 32
+#SBATCH --mem=80gb
+#SBATCH --time=48:00:00
+#SBATCH -o /home/mbiriuk/CLIP/logs/results-printer.out
+# dataset options: choose from 'CUB', 'ABO', 'fashion200k', 'coco', 'f30k'
+
+echo 'OBJECT-CENTRIC DATASETS'
+echo 'CUB-200...'
+python CLIP/src/results_printer.py --dataset CUB \
+--is_zero_shot True
+
+echo 'FASHION200K...'
+python CLIP/src/results_printer.py --dataset fashion200k \
+--is_zero_shot True
+
+echo 'ABO'
+python CLIP/src/results_printer.py --dataset ABO \
+--is_zero_shot True
+
+echo '######################'
+
+echo 'SCENE-CENTRIC DATASETS'
+echo 'MS COCO'
+python CLIP/src/results_printer.py --dataset coco \
+--is_zero_shot True
+
+echo 'FLICKR30K'
+python CLIP/src/results_printer.py --dataset f30k \
+--is_zero_shot True
