@@ -10,8 +10,6 @@ If you use this code to produce results for your scientific publication, or if y
 @inproceedings{hendriksen-2022-extending-clip,
 author = {Hendriksen, Mariya and Bleeker, Maurits and Vakulenko, Svitlana and van Noord, Nanne and Kuiper, Ernst and de Rijke, Maarten},
 booktitle = {ECIR 2022: 44th European Conference on Information Retrieval},
-date-added = {2022-12-14 12:57:49 +0100},
-date-modified = {2022-12-14 13:00:00 +0100},
 month = {April},
 publisher = {Springer},
 title = {Extending CLIP for Category-to-image Retrieval in E-commerce},
@@ -45,12 +43,11 @@ data/
 ### Evaluate the model
 
 ```bash
-# CLIP evaluation
-sh CLIP/jobs/evaluation/evaluate_cub.job
-sh CLIP/jobs/evaluation/evaluate_abo.job
-sh CLIP/jobs/evaluation/evaluate_fashion200k.job
-sh CLIP/jobs/evaluation/evaluate_mscoco.job
-sh CLIP/jobs/evaluation/evaluate_flickr30k.job
+sh jobs/evaluation/evaluate_cub.job
+sh jobs/evaluation/evaluate_abo.job
+sh jobs/evaluation/evaluate_fashion200k.job
+sh jobs/evaluation/evaluate_mscoco.job
+sh jobs/evaluation/evaluate_flickr30k.job
 # printing the results for CLIP in one file
-sh CLIP/jobs/postprocessing/results_printer.job
+sh jobs/postprocessing/results_printer.job
 ```
