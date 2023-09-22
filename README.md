@@ -10,6 +10,8 @@ in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)" published a
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
+![CLIP-ITA model configuration](images/clip-ita.png)
+
 ## License
 The contents of this repository are licensed under the MIT license. If you modify its contents in any way, please link back to this repository.
 
