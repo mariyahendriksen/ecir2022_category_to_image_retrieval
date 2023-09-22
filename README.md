@@ -10,20 +10,6 @@ in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)" published a
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
-## Citing and Authors
-If you find this repository helpful, feel free to cite our paper "[Extending CLIP for Category-to-image Retrieval
-in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)":
-
-```latex
-@inproceedings{hendriksen-2022-extending-clip,
-author = {Hendriksen, Mariya and Bleeker, Maurits and Vakulenko, Svitlana and van Noord, Nanne and Kuiper, Ernst and de Rijke, Maarten},
-booktitle = {ECIR 2022: 44th European Conference on Information Retrieval},
-month = {April},
-publisher = {Springer},
-title = {Extending CLIP for Category-to-image Retrieval in E-commerce},
-year = {2022}}
-```
-
 ## License
 The contents of this repository are licensed under the MIT license. If you modify its contents in any way, please link back to this repository.
 
@@ -59,3 +45,19 @@ sh jobs/evaluation/evaluate_flickr30k.job
 # printing the results for CLIP in one file
 sh jobs/postprocessing/results_printer.job
 ```
+
+
+## Citing and Authors
+If you find this repository helpful, feel free to cite our paper "[Extending CLIP for Category-to-image Retrieval
+in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)":
+
+```latex
+@inproceedings{hendriksen-2022-extending-clip,
+author = {Hendriksen, Mariya and Bleeker, Maurits and Vakulenko, Svitlana and van Noord, Nanne and Kuiper, Ernst and de Rijke, Maarten},
+booktitle = {ECIR 2022: 44th European Conference on Information Retrieval},
+month = {April},
+publisher = {Springer},
+title = {Extending CLIP for Category-to-image Retrieval in E-commerce},
+year = {2022}}
+```
+
