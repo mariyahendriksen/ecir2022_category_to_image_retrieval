@@ -10,8 +10,9 @@ in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)" published a
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
-## Citation
-If you use this code to produce results for your scientific publication, or if you share a copy or fork, please refer to our ECIR 2022 paper:
+## Citing and Authors
+If you find this repository helpful, feel free to cite our paper "[Extending CLIP for Category-to-image Retrieval
+in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)":
 
 ```latex
 @inproceedings{hendriksen-2022-extending-clip,
