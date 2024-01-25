@@ -18,7 +18,7 @@ The contents of this repository are licensed under the MIT license. If you modif
 
 ## Reproducing Experiments
 
-First off, install the dependancies:
+First off, install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
