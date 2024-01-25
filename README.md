@@ -1,4 +1,4 @@
-# Extending CLIP for Category-to-image Retrieval in E-commerce
+# Extending CLIP for Category-to-Image Retrieval in E-commerce
 
 This repository contains the code used for the experiments in "[Extending CLIP for Category-to-image Retrieval
 in E-commerce](https://mariyahendriksen.github.io/files/ecir22.pdf)" published at ECIR 2022.
