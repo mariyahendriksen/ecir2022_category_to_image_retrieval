@@ -1,3 +1,4 @@
+"""This module contains classes for loading image and text datasets."""
 from typing import Dict, Any
 
 import pandas as pd
